@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ru">
+<head></head>
+<body>
+<div th:fragment="menu" class="row">
+    <ul class="nav">
+        <li class="nav-item">
+            <img id="logo" th:src="@{/images/logo-min.png}"/>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/main">Главная</a>
+        </li>
+        <li th:if="${#lists.contains(roles, T(ru.nvcore.childfood.domain.Role).ADMINISTRATION)}" class="nav-item">
+            <a class="nav-link" href="/kindergartens">Детские сады</a>
+        </li>
+        <li th:if="${#lists.contains(roles, T(ru.nvcore.childfood.domain.Role).KINDERGARTEN)}" class="nav-item">
+            <a class="nav-link" href="/attendance">Посещаемость</a>
+        </li>
+        <li th:if="${#lists.contains(roles, T(ru.nvcore.childfood.domain.Role).KINDERGARTEN)}" class="nav-item">
+            <a class="nav-link" href="/children">Дети</a>
+        </li>
+        <li th:if="${#lists.contains(roles, T(ru.nvcore.childfood.domain.Role).KINDERGARTEN)}" class="nav-item">
+            <a class="nav-link" href="/menu">Меню</a>
+        </li>
+        <li th:if="${#lists.contains(roles, T(ru.nvcore.childfood.domain.Role).KINDERGARTEN)}" class="nav-item">
+            <a class="nav-link" href="/recipe">Рецепты</a>
+        </li>
+        <li th:if="${#lists.contains(roles, T(ru.nvcore.childfood.domain.Role).KINDERGARTEN)}" class="nav-item">
+            <a class="nav-link" href="/product">Продукты</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/logout">Выход</a>
+        </li>
+    </ul>
+</div>
+</body>

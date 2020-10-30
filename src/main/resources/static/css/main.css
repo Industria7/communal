@@ -1,0 +1,124 @@
+#loginContent.container {
+    padding-top: 150px;
+}
+
+.mainContentPadding {
+    padding-top: 50px;
+}
+
+.sm-padding {
+    padding-top: 20px;
+}
+
+.input-box {
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.tftable {
+    font-size:16px;
+    color:#333333;
+    width:100%;
+    border-width: 1px;
+    border-color: #729ea5;
+    border-collapse: collapse;
+}
+
+.tftable table{
+    width: 100%;
+}
+
+.tftable thead input {
+    width: 100%;
+}
+
+.tftable tbody tr {
+    background-color:#ffffff;
+}
+
+.tftable tbody td {
+    font-size:14px;
+    padding: 10px;
+    text-align: center;
+    border: 1px dotted rgb(0, 0, 0);
+}
+
+.tftable tbody tr:hover {
+    background-color:#ffff99;
+}
+
+.tftable thead td {
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+}
+
+.child-form dl {
+    display: block;
+    margin: 4px;
+    position:relative;
+}
+
+.child-form dt {
+    display:block;
+    float:left;
+    clear:left;
+    min-width: 100px;
+    text-align:right;
+    padding: 4px;
+}
+
+.child-form dt label {
+    font-weight: bold;
+}
+
+.child-form dd {
+    display:block;
+    padding:4px;
+    float:left;
+}
+
+.child-form fieldset {
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border: 2px groove threedface;
+    border-image: initial;
+}
+
+.child-form legend {
+    display: block;
+    width: auto;
+    padding: 0 5px;
+    margin-bottom: 0;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: inherit;
+    border-bottom: none;
+}
+
+.login-logo {
+    margin: 0 auto;
+    padding-top: 150px;
+    display: table;
+}
+
+#logo {
+    padding-top: 5px;
+}
+
+input[type="checkbox"][readonly] {
+  pointer-events: none;
+}
