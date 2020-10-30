@@ -1,1 +1,1 @@
-web: java -jar build/libs/communal.jar
+web: java -jar build/libs/communal-0.1.jar
