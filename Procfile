@@ -1,1 +1,1 @@
-web: java -Dserver.port=$PORT -jar backend/target/backend-0.0.1-SNAPSHOT.jar, где backend-0.0.1-SNAPSHOT.jar
+web: java -jar build/libs/communal.jar
