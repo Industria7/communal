@@ -31,8 +31,6 @@ dependencies {
 
     implementation "org.jetbrains.kotlin:kotlin-reflect"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
-
-    implementation 'com.itextpdf:itextpdf:5.5.13.1'
 }
 
 compileKotlin {
