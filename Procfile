@@ -1,1 +1,1 @@
-web: java -jar build/libs/communal-0.1-SNAPSHOT.jar -Dserver.port=$PORT
+web: java -jar build/libs/communal-0.1.jar -Dserver.port=$PORT
