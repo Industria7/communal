@@ -23,14 +23,14 @@ dependencies {
     implementation "org.springframework.boot:spring-boot-starter-thymeleaf"
     implementation "org.springframework.boot:spring-boot-starter-data-jpa"
 
-    implementation "com.h2database:h2"
-
     implementation "org.webjars:jquery:3.3.1-1"
     implementation "org.webjars:popper.js:1.14.1"
     implementation "org.webjars:bootstrap:4.1.1"
 
     implementation "org.jetbrains.kotlin:kotlin-reflect"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+
+    implementation 'org.postgresql:postgresql:42.2.18.jre7'
 }
 
 compileKotlin {
