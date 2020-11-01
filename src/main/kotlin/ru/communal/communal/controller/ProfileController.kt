@@ -9,15 +9,10 @@ import javax.servlet.http.HttpSession
  * @author osadchiy.ia
  */
 @Controller
-class IndexController {
+class ProfileController {
 
-    @GetMapping("/")
-    fun rootGet(model: Model, session: HttpSession): String {
-        return "index"
-    }
-
-    @GetMapping("/index")
-    fun indexGet(model: Model, session: HttpSession): String {
-        return "index"
+    @GetMapping("/profile")
+    fun profileGet(model: Model, session: HttpSession): String {
+        return "profile"
     }
 }
