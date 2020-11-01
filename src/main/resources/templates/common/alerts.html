@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ru">
+<head></head>
+<body>
+<th:block th:fragment="alerts">
+    <li class="nav-item dropdown no-arrow mx-1" role="presentation">
+        <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><span class="badge badge-danger badge-counter">3+</span><i class="fas fa-bell fa-fw"></i></a>
+            <div class="dropdown-menu dropdown-menu-right dropdown-list dropdown-menu-right animated--grow-in"
+                 role="menu">
+                <h6 class="dropdown-header">Оповещения</h6>
+                <a class="d-flex align-items-center dropdown-item" href="#">
+                    <div class="mr-3">
+                        <div class="bg-primary icon-circle"><i class="fas fa-file-alt text-white"></i></div>
+                    </div>
+                    <div><span class="small text-gray-500">10 Октября, 2020</span>
+                        <p>Новый ежемесячный отчет готов к загрузке!</p>
+                    </div>
+                </a>
+                <a class="d-flex align-items-center dropdown-item" href="#">
+                    <div class="mr-3">
+                        <div class="bg-success icon-circle"><i class="fas fa-donate text-white"></i></div>
+                    </div>
+                    <div><span class="small text-gray-500">25 Октября, 2020</span>
+                        <p>$290.29 было зачислено на ваш счет!</p>
+                    </div>
+                </a>
+                <a class="d-flex align-items-center dropdown-item" href="#">
+                    <div class="mr-3">
+                        <div class="bg-warning icon-circle"><i class="fas fa-exclamation-triangle text-white"></i></div>
+                    </div>
+                    <div><span class="small text-gray-500">1 Ноября, 2020</span>
+                        <p>Предупреждение о расходах: мы заметили необычно высокие расходы для вашего аккаунта.</p>
+                    </div>
+                </a><a class="text-center dropdown-item small text-gray-500" href="#">Показать все оповещения</a></div>
+        </div>
+    </li>
+</th:block>
+
+<th:block th:fragment="messages">
+    <li class="nav-item dropdown no-arrow mx-1" role="presentation">
+        <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><i class="fas fa-envelope fa-fw"></i><span class="badge badge-danger badge-counter">7</span></a>
+            <div class="dropdown-menu dropdown-menu-right dropdown-list dropdown-menu-right animated--grow-in"
+                 role="menu">
+                <h6 class="dropdown-header">Сообщения</h6>
+                <a class="d-flex align-items-center dropdown-item" href="#">
+                    <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="img/avatars/avatar4.jpeg">
+                        <div class="bg-success status-indicator"></div>
+                    </div>
+                    <div class="font-weight-bold">
+                        <div class="text-truncate"><span>Всем привет! Мне интересно, можете ли вы помочь мне с проблемой, которая у меня возникла.</span></div>
+                        <p class="small text-gray-500 mb-0">Эмили Фаулер - 58м</p>
+                    </div>
+                </a>
+                <a class="d-flex align-items-center dropdown-item" href="#">
+                    <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="img/avatars/avatar2.jpeg">
+                        <div class="status-indicator"></div>
+                    </div>
+                    <div class="font-weight-bold">
+                        <div class="text-truncate"><span>У меня есть фотографии, которые вы заказали в прошлом месяце!</span></div>
+                        <p class="small text-gray-500 mb-0">Jae Chun - 1д</p>
+                    </div>
+                </a>
+                <a class="d-flex align-items-center dropdown-item" href="#">
+                    <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="img/avatars/avatar3.jpeg">
+                        <div class="bg-warning status-indicator"></div>
+                    </div>
+                    <div class="font-weight-bold">
+                        <div class="text-truncate"><span>Отчет за последний месяц выглядит великолепно, я очень доволен достигнутым прогрессом, продолжайте в том же духе!</span></div>
+                        <p class="small text-gray-500 mb-0">Morgan Alvarez - 2д</p>
+                    </div>
+                </a>
+                <a class="d-flex align-items-center dropdown-item" href="#">
+                    <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="img/avatars/avatar5.jpeg">
+                        <div class="bg-success status-indicator"></div>
+                    </div>
+                    <div class="font-weight-bold">
+                        <div class="text-truncate"><span>Я хороший мальчик? Я спрашиваю, потому что кто-то сказал мне, что люди говорят это всем собакам, даже если они не очень хороши....</span></div>
+                        <p class="small text-gray-500 mb-0">Chicken the Dog · 2н</p>
+                    </div>
+                </a><a class="text-center dropdown-item small text-gray-500" href="#">Показать все сообщения</a></div>
+        </div>
+        <div class="shadow dropdown-list dropdown-menu dropdown-menu-right" aria-labelledby="alertsDropdown"></div>
+    </li>
+</th:block>
+</body>
+</html>
