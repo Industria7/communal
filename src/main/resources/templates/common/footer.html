@@ -29,10 +29,13 @@
         var month=new Array("января","февраля","марта","апреля","мая","июня",
         "июля","августа","сентября","октября","ноября","декабря");
 
-        document.getElementById('current_date').innerHTML = day[d.getDay()]+"</br> " +d.getDate()+ " " + month[d.getMonth()]
-        + " " + d.getFullYear() + "г.";
+        var current_date = document.getElementById('current_date');
+        if (current_date != null){
+                current_date.innerHTML = day[d.getDay()]+"</br> " +d.getDate()+ " " + month[d.getMonth()]
+                + " " + d.getFullYear() + "г.";
+            }
         }
-        setInterval(getDate, 0);
+    getDate();
     </script>
 </th:block>
 </body>
