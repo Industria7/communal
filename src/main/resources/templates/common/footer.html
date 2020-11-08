@@ -15,24 +15,17 @@
     <script th:src="@{bootstrap/js/bootstrap.min.js}"></script>
     <script th:src="@{js/chart.min.js}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
-    <script th:src="@{/js/script.min.js}"></script>
+    <script th:src="@{js/func.js}"></script>
     <script th:src="@{js/main.js}"></script>
 
     <script type="text/javascript">
     function getDate()
         {
         var d = new Date();
-
-        var day=new Array("Воскресенье","Понедельник","Вторник",
-        "Среда","Четверг","Пятница","Суббота");
-
-        var month=new Array("января","февраля","марта","апреля","мая","июня",
-        "июля","августа","сентября","октября","ноября","декабря");
-
-        document.getElementById('current_date').innerHTML = day[d.getDay()]+"</br> " +d.getDate()+ " " + month[d.getMonth()]
-        + " " + d.getFullYear() + "г.";
+        document.getElementById('current_date').innerHTML = d.getDate() + "." + (d.getMonth()+1)
+        + "." + d.getFullYear();
         }
-        setInterval(getDate, 0);
+        getDate();
     </script>
 </th:block>
 </body>
